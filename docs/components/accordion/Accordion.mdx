@@ -1,0 +1,31 @@
+import { Accordion } from "technotic"
+
+An accordion is the type of component that allows the user to expand and collapse sections of content to view or hide information as needed. This interaction pattern helps in managing large amounts of content within a limited space by providing a clean and organized interface. By clicking on the headers, users can reveal or conceal the associated content panels, enhancing user experience through intuitive design.
+
+## Default Accordion
+
+<div style={{
+    border: "2px solid #EEEDEB",
+    borderRadius: "12px",
+    padding: "5px 70px 35px 40px",
+    width: "80%", // Mengubah lebar div
+}}>
+  <Accordion
+        question="What is TypeScript?"
+        answer="TypeScript is a superset of JavaScript that adds static typing to the language. It was developed by Microsoft and is designed to help developers write more reliable and maintainable code by catching errors at compile time rather than at runtime." />  
+        
+</div>
+
+
+<div style={{
+    padding: "20px 0",
+}}>
+    To call technotic's Accordion:
+</div>
+
+```
+import { Accordion } from "technotic"
+
+<Accordion question={question} answer="{answer}" />
+```
+
