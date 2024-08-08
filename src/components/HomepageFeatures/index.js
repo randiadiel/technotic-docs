@@ -1,7 +1,6 @@
 import React from "react";
-import styles from "./styles.module.css";
-import Contributors from "../Contributors/index";
-import ContributorStyle from "../Contributors/styles.contributors.css";
+import styles from "./HomepageFeatures.module.css";
+import Contributors from "../Contributors";
 
 const FeaturesList = [
     {
@@ -90,7 +89,7 @@ export default function HomepageFeatures() {
                 <div className="container">
                     <h1 className="text--center">Contributors</h1>
                     <div className={styles.contributors_item}>
-                        <Contributors className={ContributorStyle} />
+                        <Contributors />
                     </div>
                 </div>
             </section>

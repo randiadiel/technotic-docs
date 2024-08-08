@@ -2,12 +2,14 @@ import React from "react";
 
 import useContributors from "./hooks/useContributors";
 
+import "./Contributors.css"
+
 const Contributors = () => {
     const { contributors } = useContributors();
 
     return (
         <div className="contributors">
-            {contributors.map(({ id, login, htmlUrl, avatarUrl }) => (
+            {contributors.filter(({login}) => login!== "github-actions[bot]").map(({ id, login, htmlUrl, avatarUrl }) => (
                 <section className="contributor-card" key={id}>
                     <div className="contributor-card-content">
                         <img

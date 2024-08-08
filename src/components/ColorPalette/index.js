@@ -2,7 +2,7 @@ import React from "react";
 import { PALETTES, HEXCODES } from "./constants/colors";
 import useCopyToClipboard from "./hooks/useCopyToClipboard";
 
-import "./styles.colorpalette.css";
+import "./ColorPalette.css";
 
 const ColorPalette = () => {
     const { copy, tooltip, visible, tooltipVisibility } = useCopyToClipboard();
